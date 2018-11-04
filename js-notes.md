@@ -99,4 +99,78 @@
 * After splicing the array, it will ONLY contain the part BEFORE & AFTER the splicing. The splice is equal to ALL VARIABLES between `3 and 7 (inclusive)` and the remainder of the array which contains ALL variables between  `0 and 2 (inclusive), and 8 to 9 (inclusive).`
 
 ## Operators
-*
+* Every variable in JS is casted automatically, so any operator b/w 2 variables will ALWAYS give some kind of result
+
+### Operators - addition
+* the `+` (addition) operator used for both numerical addition & concantenation of strings
+* ex:
+* `var a = 1;`
+* `var b = 2;`
+* `var c = a + b;`   // c = 3
+
+* Here's string concantenation:
+* `var name = "John";`
+* `console.log("Hello " + name + "!");` // Hello John!
+* `console.log("The meaning of life is " + 42);` // The meaning of life is 42
+* `console.log(42 + " is the meaning of life");` // 42 is the meaning of life
+
+### Operators - other math operators
+*  subtract, multiply, and divide
+* `console.log(3 - 5);`  // outputs -2
+* `console.log(3 * 5);`  // outputs 15
+* `console.log(3 / 5);`  // outputs 0.6
+* `console.log(5 % 3);`  // outputs 2
+
+### Operators - assignment & operation operators
+* JS also supports combined assignment and operation operators. Aka, instead of `myNumber = myNumber / 2` one can do `myNumber /= 2`
+* List of operators:
+* `/=`
+* `*=`
+* `-=`
+* `+=`
+* `%=`
+* Some `Math` operators:
+* `Math.abs` for absolute value
+* `Math.exp` calculates e to the power of a #
+* `Math.pow(x,y)` does x^(y)
+* `Math.floor` removes fractional part of #
+* `Math.random` gives random # x where 0<=x<1
+
+## Conditions - `if` statements and `switch` statements
+* ex:
+* `if (confirm("Are you John Smith?"))`
+* `{`
+* `console.log("Hello John, how are you?");`
+* `} else {`
+* `console.log("Then what is your name?");`
+* `}`
+* Its possible to omit the `else` keyword if we just want to run a block of code ONLY if a certain expression is true. Use `==` to see if 2 variables are equal.
+* ex:
+* `var foo = 1;`
+* `var bar = 2;`
+
+* `if (foo < bar)`
+* `{`
+*    `console.log("foo is smaller than bar.");`
+* `}`
+
+* ex: `switch` statement
+* `var rank = "Commander";`
+* `switch(rank)`
+* `{`
+*    `case "Private":`
+*    `case "Sergeant":`
+*        `console.log("You are not authorized.");`
+*        `break;`
+*    `case "Commander":`
+*        `console.log("Hello commander! what can I` * `do for you today?");`
+*       `break;`
+*    `case "Captain":`
+*        `console.log("Hello captain! I will do`
+* `anything you wish.");`
+*        `break;`
+*    `default:`
+*        `console.log("I don't know what your rank` * `is.");`
+*        `break;`
+* `}`
+## Loops
