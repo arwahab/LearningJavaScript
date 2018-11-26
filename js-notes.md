@@ -173,4 +173,35 @@
 *        `console.log("I don't know what your rank` * `is.");`
 *        `break;`
 * `}`
+
 ## Loops
+
+### Loops - the `for` loop
+* here's a simple example:
+* `var i;`
+* `for (i = 0; i < 3; i = i + 1)`
+* `{`
+* `console.log(i);`
+* `}`
+* Above ex prints this:
+* `0`
+* `1`
+* `2`
+* `for` has same syntax as in Java & C
+* can also put `var` in loop ex:
+* `for (var i = 0; i < 3; i++)`
+* `{`
+* `console.log(i);`
+* `}`
+* ex iterating over array and printing it
+* `var myArray = ["A", "B", "C"];`
+* `for (var i = 0; i < myArray.length; i++)`
+* `{`
+* `console.log("The member of myArray in index " + i + " is " + myArray[i]);`
+* `}`
+* Above ex prints this:
+* `The member of myArray in index 0 is A`
+* `The member of myArray in index 1 is B`
+* `The member of myArray in index 2 is C`
+### Loops - the `while` loop
+* 
